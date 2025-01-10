@@ -1,0 +1,10 @@
+[Unit]
+Description=Screen power off handler
+After=graphical.target
+
+[Service]
+Type=simple
+ExecStart=/bin/sh -c 'dbus-monitor --system "type=\'signal\',interface=\'org.freedesktop.login1.Manager\',member=\'PrepareForSleep\'" | while read x; do if echo "$x" | grep -q "boolean true"; then /usr/local/bin/scripts/cec-suspend.sh; fi; done'
+
+[Install]
+WantedBy=graphical.target

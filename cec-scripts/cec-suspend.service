@@ -1,0 +1,17 @@
+#place in /etc/systemd/system
+[Unit]
+Before=suspend.target
+Before=sleep.target
+Before=hibernate.target
+Before=hybrid-sleep.target
+StopWhenUnneeded=yes
+[Service]
+Type=oneshot
+ExecStart=/bin/sh /usr/local/bin/scripts/cec-suspend.sh
+TimeoutSec=0
+RemainAfterExit=yes
+[Install]
+WantedBy=suspend.target
+WantedBy=sleep.target
+WantedBy=hibernate.target
+WantedBy=hybrid-sleep.target

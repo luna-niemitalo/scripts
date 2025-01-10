@@ -1,8 +1,22 @@
 #!/bin/bash
-if [ -z "$1" ]
-then
+if [ -z "$1" ]; then
 	printf "Usage: waifu <Path to image>"
 	exit 1
 fi
-waifu2x-converter-cpp -i "$PWD/$1" -o "$PWD/$1 _x2.png" -p 0
-mv "$1" ~/Pictures/old/
+
+path="$1"
+copymode="false"
+if [ "$path" == "-c" ]; then
+    copymode="true"
+    path="$2"
+fi
+
+
+
+~/waifu2x-ncnn-vulkan/src/build/waifu2x-ncnn-vulkan -i "$PWD/$path" -o "$PWD/$path _x2.png"
+
+if [ $copymode == "true" ]; then
+  cp "$path" ~/Pictures/old/
+  else
+  mv "$path" ~/Pictures/old/
+fi

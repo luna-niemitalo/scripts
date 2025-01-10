@@ -1,0 +1,18 @@
+#place in /etc/systemd/system
+[Unit]
+Description=CEC Wakeup Action
+After=sleep.target
+After=suspend.target
+After=hibernate.target
+After=hybrid-sleep.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/scripts/cec-wakeup.sh
+User=root
+
+[Install]
+WantedBy=sleep.target
+WantedBy=suspend.target
+WantedBy=hibernate.target
+WantedBy=hybrid-sleep.target
