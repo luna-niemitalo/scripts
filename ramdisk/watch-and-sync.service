@@ -1,0 +1,11 @@
+[Unit]
+Description=Watch ramdisk folder and sync on changes
+After=default.target
+
+[Service]
+ExecStart=/home/luna/scripts/ramdisk/watch_and_sync.sh
+Restart=always
+RestartSec=5s
+
+[Install]
+WantedBy=default.target

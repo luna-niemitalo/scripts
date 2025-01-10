@@ -1,0 +1,11 @@
+[Unit]
+Description=Sync ramdisk to backup on shutdown
+DefaultDependencies=no
+Before=shutdown.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/luna/scripts/ramdisk/sync_ramdisk.sh
+
+[Install]
+WantedBy=shutdown.target

@@ -12,20 +12,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="167f112b-4344-419c-bc7a-07ce15b14331" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cec-scripts/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cec-scripts/cec-screen.service" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cec-scripts/cec-suspend.service" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cec-scripts/cec-suspend.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cec-scripts/cec-wakeup.service" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cec-scripts/cec-wakeup.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cec-scripts/deploy.sh" afterDir="false" />
+    <list default="true" id="167f112b-4344-419c-bc7a-07ce15b14331" name="Default Changelist" comment="Initial">
+      <change afterPath="$PROJECT_DIR$/ramdisk/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ramdisk/deploy.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/greasemonkey/scratch.js" beforeDir="false" afterPath="$PROJECT_DIR$/greasemonkey/scratch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/waifu.sh" beforeDir="false" afterPath="$PROJECT_DIR$/waifu.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +33,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "luna-niemitalo"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:luna-niemitalo/scripts.git",
+    "accountId": "f76b876c-3629-49cb-b836-e765e66ce306"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 3
 }]]></component>
@@ -123,8 +125,25 @@
       <updated>1572165455617</updated>
       <workItem from="1572165456728" duration="2742000" />
       <workItem from="1578676420469" duration="4000" />
-      <workItem from="1736547104230" duration="1962000" />
+      <workItem from="1736547104230" duration="3409000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial">
+      <option name="closed" value="true" />
+      <created>1736549088868</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736549088868</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial">
+      <option name="closed" value="true" />
+      <created>1736549124629</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736549124629</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,5 +159,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial" />
   </component>
 </project>

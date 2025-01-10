@@ -1,0 +1,11 @@
+[Unit]
+Description=Restore ramdisk from backup
+After=default.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/luna/scripts/ramdisk/restore_ramdisk.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=default.target
