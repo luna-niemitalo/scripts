@@ -1,0 +1,41 @@
+variant: fcos
+version: 1.6.0
+storage:
+  files:
+    - path: /etc/vconsole.conf
+      mode: 0644
+      contents:
+        inline: KEYMAP=fi
+    - path: /etc/hostname
+      mode: 0644
+      contents:
+        inline: slfi01
+passwd:
+  users:
+    - name: spex
+      groups:
+        - docker
+        - wheel
+        - sudo
+      ssh_authorized_keys:
+        - ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAgEA1x8zCl+I4CpsDcQved/gjUs0114qPujR8vE5Yfi2W6cel4Hdo8HXkGKlNOaD4aIzx25hOHJVoNorEDSHxmv/kxDWol+6dT1fBuZzBBwduUwKSLnH2KlcnXbjjAiC1pGAWSouUUInh7ewktVvdTE1Q1SP9r6BilwL4SOpWTdWTloDZnxCNzewBPhqkDig60QeLHZJ0WzEUFSR4kWGbhWhmh5jtNShJ1uusPc6hH1/F9Nboo+ODHS6tbGoCy8568kp+MsK8tgO7BxMNM9GdYHGv8aRG6j77MFTUy85jdW3/6J4OC6YSGVrHEpyZAYsaFfFwNzzV0Xtb245IMe4wThhSbE2arzCQhab8f1cL+CacAiC0w3t+ScGXVTqphuzRZViILUlLIWswS6tS19k/YAKyaV2FTd4CzqEPGd4CTWgiDzMY17Hi26J+dR20biKJtDFxAyFH0gQpys5Euqj5HcbWbbfukjpzeaitt3iAmWkAFMA8lFIyKdcA40b5WGTp13f2sCsLSv0+U4rw0kT8h6/X+5upN4Ovsw1qDycyCXNNqlFqcu93qIWjd0zbnmSmIt78LXK8WjGtW76WiCXgvGb9H97UIMNBwIAIY8UEmfHxkrcvZ+HMFHrlHxHt6kA5Pry2DbtETcpx4U+WHQQHUmlgFeXRObv6FPaUIneAPYh/As=
+        - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO8N3JAypXAkl19V5YpHBosX6qfz2RpWJaOaL4ZLpNM5
+        - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIG9uiwCSHGMS31edE+uXwICBsB8y90pqqN7fBGEb78VI
+    - name: luna
+      groups:
+        - docker
+        - wheel
+        - sudo
+      ssh_authorized_keys:
+        - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFet38UnpgUY39pHMLcszlMEABXzfge9TiMWcABC8fGG
+        - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPbqAu2aRPlSoM4IuSL9s2e+FkbL+W7ftuzculpHe9Oi
+        - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHx1of9XqBfXK15K7N16eOnmKIkPiar47pHobb9YQa+P
+    - name: viima
+      groups:
+        - docker
+        - wheel
+        - sudo
+      ssh_authorized_keys:
+        - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINHn+5WxWOJ/IozBD9oX+lQ/V2Fh7u1R56shO05Qc9bN
+        - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAICpDX4UfmDStUMjS0ixHzRhvJFYdG6hpm9o5AapZqq
+        - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKK7q7ZwqdsD0uJdyh5pojyXgtUmZz/G9d6nhNa4Y2Ue
